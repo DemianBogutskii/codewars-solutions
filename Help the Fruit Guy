@@ -1,0 +1,5 @@
+#https://www.codewars.com/kata/557af4c6169ac832300000ba
+
+def remove_rotten(fruits):
+    if fruits in [None, []]: return []
+    return [el.replace("rotten", "").lower() for el in fruits]
