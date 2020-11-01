@@ -1,0 +1,20 @@
+#https://www.codewars.com/kata/58485a43d750d23bad0000e6
+
+def fizz_buzz_cuckoo_clock(time):
+    hour, minut = time.split(":")
+    hour = int(hour)
+    minut = int(minut)
+    if hour > 12: hour -= 12
+    if minut == 0 and hour == 0:
+        return ("Cuckoo " * 12)[:-1]
+    elif minut == 0:
+        return ("Cuckoo " * hour)[:-1]
+    elif minut == 30:
+        return "Cuckoo"
+    elif minut % 3 == 0 and minut % 5 == 0:
+        return "Fizz Buzz"
+    elif minut % 3 == 0:
+        return "Fizz"
+    elif minut % 5 == 0:
+        return "Buzz"
+    return "tick"
