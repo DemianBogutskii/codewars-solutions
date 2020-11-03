@@ -1,0 +1,13 @@
+#https://www.codewars.com/kata/5878520d52628a092f0002d0
+
+#first solution
+
+def string_transformer(s):
+    s = s.swapcase()
+    s = s.split(" ")
+    return " ".join(s[::-1])
+
+#second solution
+
+def string_transformer(s):
+    return " ".join(s.swapcase().split(" ")[::-1])
