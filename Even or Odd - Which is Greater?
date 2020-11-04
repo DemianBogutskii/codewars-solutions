@@ -1,0 +1,10 @@
+#https://www.codewars.com/kata/57f7b8271e3d9283300000b4
+
+def even_or_odd(s):
+    s = [int(el) for el in s]
+    print(s)
+    s1 = sum([el for el in s if el % 2 == 1])
+    s2 = sum([el for el in s if el % 2 == 0])
+    if s1 > s2: return 'Odd is greater than Even'
+    elif s2 > s1: return 'Even is greater than Odd'
+    else: return 'Even and Odd are the same'
