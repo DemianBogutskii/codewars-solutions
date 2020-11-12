@@ -1,0 +1,11 @@
+#https://www.codewars.com/kata/5841f680c5c9b092950001ae/train/python
+
+First solution:
+
+def generate_integers(m, n): 
+    return [el for el in range(m, n+ 1)]
+    
+Second solution:
+
+def generate_integers(m, n): 
+    return list(range(m, n + 1))
