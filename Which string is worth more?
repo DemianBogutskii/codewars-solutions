@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/5840586b5225616069000001/train/python
+
+def highest_value(a, b):
+    A = sum([ord(el) for el in a])
+    B = sum([ord(el) for el in b])
+    return a if A >= B else b
