@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/5a87449ab1710171300000fd/train/python
+
+def tidyNumber(n):
+    for i in range(len(str(n))):
+        if n[i] > n[i + 1]:
+            return False
+    return True
