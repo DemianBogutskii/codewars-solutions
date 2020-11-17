@@ -1,0 +1,14 @@
+#https://www.codewars.com/kata/59ca8e8e1a68b7de740001f4/train/python
+
+#First solution:
+
+def solve(a,b):
+    ans = []
+    for el in b:
+        ans.append(a.count(el))
+    return ans
+
+#Second solution:
+
+def solve(a,b):
+    return [a.count(el) for el in b]
