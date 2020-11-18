@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/56f3a1e899b386da78000732/train/python
+
+def partlist(arr):
+    s = []
+    for i in range(1, len(arr)):
+        s.append((" ".join(arr[:i]), " ".join(arr[i:])))
+    return s
