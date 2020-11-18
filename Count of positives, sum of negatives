@@ -1,0 +1,25 @@
+#https://www.codewars.com/kata/576bb71bbbcf0951d5000044/solutions/python
+
+#First solution:
+
+def count_positives_sum_negatives(arr):
+    if len(arr) == 0:
+        return []
+    count = 0
+    sumneg = 0
+    for i in range(len(arr)):
+        if arr[i] > 0:
+            count = count + 1
+        else:
+            sumneg = sumneg + arr[i]
+    
+    return [count,sumneg]
+            
+ 
+#Second solution:
+
+def count_positives_sum_negatives(arr):
+    if arr == []: return []
+    pos = len([el for el in arr if el > 0])
+    neg = sum([el for el in arr if el < 0])
+    return [pos, neg]
