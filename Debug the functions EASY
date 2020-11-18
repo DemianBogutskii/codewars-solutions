@@ -1,0 +1,11 @@
+#https://www.codewars.com/kata/5844a422cbd2279a0c000281/train/python
+
+def multi(l_st):
+    n = 1
+    for el in l_st:
+        n *= el
+    return n
+def add(l_st):
+    return sum(l_st)
+def reverse(string):
+    return string[::-1]
