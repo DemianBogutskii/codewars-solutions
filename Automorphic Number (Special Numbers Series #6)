@@ -1,0 +1,20 @@
+#https://www.codewars.com/kata/5a58d889880385c2f40000aa/train/python
+
+#Fist solution:
+
+def automorphic(n):
+    s1 = str(n ** 2)
+    if s1.endswith(str(n)):
+        return "Automorphic"
+    return "Not!!"
+
+#Second solution:
+
+def automorphic(n):
+    return "Automorphic" if str(n ** 2).endswith(str(n)) else "Not!!"
+    
+#Third solution:
+
+def automorphic(n):
+    s = n ** 2 - n
+    return "Automorphic" if str(s).endswith(len(str(n)) * "0") else "Not!!"
