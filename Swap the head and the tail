@@ -1,0 +1,11 @@
+#https://www.codewars.com/kata/5a34f087c5e28462d9000082/train/python
+
+def swap_head_tail(arr):
+    if len(arr) % 2 == 0:
+        a = arr[:len(arr) // 2]
+        b = arr[len(arr) // 2:]
+        return b + a
+    else:
+        a = arr[:len(arr) // 2]
+        b = arr[len(arr) // 2 + 1:]
+        return b + [arr[len(arr) // 2]] + a
