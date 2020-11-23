@@ -1,0 +1,8 @@
+#https://www.codewars.com/kata/5868812b15f0057e05000001/solutions/python
+
+def tail_swap(st):
+    aa = st[0][st[0].index(":"):]
+    ab = st[0][:st[0].index(":")]
+    ba = st[1][st[1].index(":"):]
+    bb = st[1][:st[1].index(":")]
+    return [ab + ba, bb + aa]
