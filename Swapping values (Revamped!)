@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/5956a69343e2a8e67b00000a/python
+
+def swap(a, b):
+    return b, a
