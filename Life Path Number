@@ -1,0 +1,16 @@
+#https://www.codewars.com/kata/5a1a76c8a7ad6aa26a0007a0/train/python
+
+def life_path_number(birth):
+    year, month, day = birth.split("-")
+    while len(year) > 1: 
+        year = str(sum([int(el) for el in year]))
+        
+    while len(month) > 1: 
+        month = str(sum([int(el) for el in month]))
+    
+    while len(day) > 1: 
+        day = str(sum([int(el) for el in day]))
+    k = year + month + day
+    while len(k) > 1: 
+        k = str(sum([int(el) for el in k]))
+    return int(k)
