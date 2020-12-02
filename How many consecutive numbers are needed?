@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/559cc2d2b802a5c94700000c/train/python
+
+def consecutive(arr):
+    if arr == []: return 0
+    s = list(range(min(arr), max(arr)+ 1))
+    return len(s) - len(arr)
