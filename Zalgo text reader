@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/588fe9eaadbbfb44b70001fc/train/python
+
+def read_zalgo(text):
+    return "".join([el for el in text if el.isalnum() or el in ". , ! ?"])
