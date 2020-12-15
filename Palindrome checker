@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/549ae731a051e877fc000a86/python
+
+def is_palindrome(s):
+    if s == None: return False
+    s = [el.lower() for el in s if el.isalnum()]
+    return s == s[::-1]
