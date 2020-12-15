@@ -1,0 +1,5 @@
+#https://www.codewars.com/kata/565ce4ab24ef4aee6a000074/train/python
+
+def is_matching(st, st1, st2): 
+    st, st1, st2 = st.replace(" ", ""), st1.replace(" ", ""), st2.replace(" ", "")
+    return sorted(st.lower()) == sorted(st1.lower() + st2.lower())
