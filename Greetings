@@ -1,0 +1,5 @@
+#https://www.codewars.com/kata/5901c9d463bf406d7c000107/train/python
+
+def greetings(time, name):
+    if time != str(time) and name != str(name): return "Hey dude greet someone"
+    return f"Good {time} {name}"
