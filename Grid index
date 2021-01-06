@@ -1,0 +1,10 @@
+#https://www.codewars.com/kata/5f5802bf4c2cc4001a6f859e/train/python
+
+def grid_index(grid, indexes):
+    arr = []
+    s = ""
+    for el in grid:
+        arr = arr + el
+    for el in indexes:
+        s += arr[el -1]
+    return s
