@@ -1,0 +1,10 @@
+#https://www.codewars.com/kata/5e4217e476126b000170489b/train/python
+
+def polydivisible(x):
+    s = 1
+    x = str(x)
+    for i in range(len(x)):
+        if not int(x[:i + 1]) % s == 0:
+            return False
+        s += 1
+    return True
