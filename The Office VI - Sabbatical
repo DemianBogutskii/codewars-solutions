@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/57fe50d000d05166720000b1/train/python
+
+def sabb(s, val, hap):
+    s = s.lower()
+    a = s.count("s") + s.count("a") + s.count("b") + s.count("t") + s.count("c") + s.count("l") + s.count("i")
+    return "Sabbatical! Boom!" if (a + val + hap) > 22 else "Back to your desk, boy."
