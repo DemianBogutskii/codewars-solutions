@@ -1,0 +1,13 @@
+#https://www.codewars.com/kata/59b0ab12cf3395ef68000081/train/python
+
+def to12hourtime(time):
+    hour = time[0:2]
+    min = time[2:]
+    hour = int(hour)
+    if hour > 12: 
+        hour -= 12
+        t2 = "pm"
+    elif hour == 12: t2 = "pm"
+    else: t2 = "am"
+    if hour == 0: hour = 12
+    return f"{hour}:{min} {t2}" 
