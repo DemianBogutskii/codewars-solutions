@@ -1,0 +1,13 @@
+#https://www.codewars.com/kata/5a1c28f9c9fc0ef2e900013b/train/python
+
+def pyramid(n):
+    s = []
+    sp = n-1
+    spo = 0
+    for i in range(1, n):
+        line = " " * sp + "/" + " " * spo + "\\"
+        s.append(line)
+        sp -= 1
+        spo += 2
+    s.append(" " * sp + "/" + "_" * spo + "\\")
+    return "\n".join(s) + "\n"
