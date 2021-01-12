@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/5a55f04be6be383a50000187/train/python
+
+def special_number(number):
+    number = str(number)
+    for el in number:
+        if el not in '012345': return "NOT!!"
+    return "Special!!"
