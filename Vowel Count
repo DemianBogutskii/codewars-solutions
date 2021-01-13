@@ -1,0 +1,10 @@
+#https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/python
+
+def getCount(inputStr):
+    inputStr = inputStr.lower()
+    a = inputStr.count('a')
+    e = inputStr.count('e')
+    i = inputStr.count('i')
+    o = inputStr.count('o')
+    u = inputStr.count('u')
+    return a + e + i + o + u
