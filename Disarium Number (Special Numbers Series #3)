@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/5a53a17bfd56cb9c14000003/solutions/python
+
+def disarium_number(number):
+    s = 0
+    for i, el in enumerate(str(number)):
+        s += int(el) ** (i + 1)
+    return "Disarium !!" if s == number else "Not !!"
