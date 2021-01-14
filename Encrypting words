@@ -1,0 +1,10 @@
+#https://www.codewars.com/kata/5a15a5d557f0af795b00005f/train/python
+
+def encrypt(s):
+    ss = ""
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+    for el in s:
+        i = alpha.index(el)
+        new = 25 - i
+        ss += alpha[new]
+    return ss
