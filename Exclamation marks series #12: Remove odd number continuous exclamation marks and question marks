@@ -1,0 +1,14 @@
+#https://www.codewars.com/kata/57fb0f3f9610ced69000023c/solutions/python
+
+def remove(inp):
+    for i in range(2):
+        s = ''
+        for el in inp:
+            if s == '' or el == s[-1]:
+                s += el
+            else:
+                s += " " + el
+        s = s.split()
+        arr = [el for el in s if len(el) % 2 == 0 or len(el) == 1]
+        inp = "".join(arr)
+    return inp
