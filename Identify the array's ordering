@@ -1,0 +1,14 @@
+#https://www.codewars.com/kata/57f669477c9a2b1b9700022d/train/python
+
+def order_type(arr):
+    s = []
+    for el in arr:
+        if type(el) == str or type(el) == list:
+            s.append(len(el))
+        elif type(el) == int:
+            s.append(len(str(el)))
+    ar = [el for el in s if el == s[0]]
+    if len(ar) == len(s): return "Constant"
+    elif s == sorted(s): return "Increasing"
+    elif s == sorted(s)[::-1]: return  "Decreasing"
+    return "Unsorted"
