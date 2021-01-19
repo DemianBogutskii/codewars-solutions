@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/5a2b7edcb6486a856e00005b/train/python
+
+def check_vowel(string, position):
+    return string[position] in "AEOUIaeoui" if position > -1 and position < len(string) else False
