@@ -1,0 +1,5 @@
+#https://www.codewars.com/kata/55caf1fd8063ddfa8e000018/train/python
+
+def arithmetic_sequence_elements(a, r, n):
+    if r == 0: return ", ".join([str(a)] * n)
+    return ", ".join([str(i) for i in range(a, a + r * n, r)])
