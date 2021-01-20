@@ -1,0 +1,11 @@
+#https://www.codewars.com/kata/55caef80d691f65cb6000040/train/python
+
+def geometric_sequence_elements(a, r, n):
+    arr = []
+    counter = 0
+    last = a
+    while counter < n:
+        counter += 1
+        arr.append(str(last))
+        last = last * r
+    return ", ".join(arr)
