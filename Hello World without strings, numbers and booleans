@@ -1,0 +1,24 @@
+#https://www.codewars.com/kata/5b0148133e9715bf6f000154/solutions/python
+
+def hi_all():
+    one = len([[]])
+    two = one + one
+    three = two + one
+    four = two * two
+    five = four + one
+    six = two * three
+    seven = six + one
+    eight = four * two
+    nine = three * three
+    ten = five * two
+    
+    H = chr(eight * nine)
+    e = chr(ten * ten + one)
+    l = chr(ten * ten + eight)
+    o = chr(ten * (ten + one) + one)
+    space = chr(eight * four)
+    W = chr(ten * eight + seven)
+    r = chr(ten * (ten + one) + four)
+    d = chr(ten * ten)
+    
+    return H + e + l + l + o + space + W + o + r + l + d
