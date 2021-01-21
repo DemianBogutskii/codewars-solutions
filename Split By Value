@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/5a433c7a8f27f23bb00000dc/train/python
+
+def split_by_value(k, elements):
+    less = [el for el in elements if el < k]
+    more = [el for el in elements if el >= k]
+    return less + more 
