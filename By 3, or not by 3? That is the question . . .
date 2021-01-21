@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/59f7fc109f0e86d705000043/train/python
+
+def divisible_by_three(st): 
+    s = sum([int(el) for el in st])
+    while s > 0:
+        s -= 3
+    return s == 0
