@@ -1,0 +1,9 @@
+#https://www.codewars.com/kata/5d076515e102162ac0dc514e/train/python
+
+def baby_shark_lyrics():
+    doo = "doo " * 5 + "doo\n"
+    s = ""
+    name = ["Baby shark", "Mommy shark", "Daddy shark", "Grandma shark", "Grandpa shark", "Let's go hunt"]
+    for el in name:
+        s += f"{el}, {doo}" * 3 + f"{el}!\n"
+    return s + "Run away,…"
