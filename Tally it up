@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/5630d1747935943168000013/train/python
+
+def score_to_tally(score):
+    a = "e <br>" * (score // 5) + " abcd"[score % 5]
+    if a[-1] == " ": a = a[:-1]
+    return a
