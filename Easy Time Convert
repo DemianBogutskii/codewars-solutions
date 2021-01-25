@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/5a084a098ba9146690000969/train/python
+
+def time_convert(n):
+    if n <= 0: return "00:00"
+    minutes = str(n%60).rjust(2, "0")
+    hours = str(n//60).rjust(2, "0")
+    return f"{hours}:{minutes}"
