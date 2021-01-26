@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/55c02535bf0974404b0000f9/train/python
+
+def summation(x):
+    return "Invalid Value" if type(x) != int else sum(range(x+1))
