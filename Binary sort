@@ -1,0 +1,5 @@
+#https://www.codewars.com/kata/5c8e99ba171e834117a0e905/train/python
+
+def binary_sort(st):
+    s = [el for el in st if el in ["1", "0"]]
+    return "".join(sorted(s))
