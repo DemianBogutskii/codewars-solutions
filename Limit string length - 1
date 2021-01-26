@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/5208fc3cb613bc725f000142/train/python
+
+def solution(st, limit): 
+    return st if limit >= len(st) else st[:limit] + "..."
