@@ -1,0 +1,5 @@
+#https://www.codewars.com/kata/59eb28fb0a2bffafbb0000d6/train/python
+
+def sort_by_binary_ones(arr): 
+    arr = sorted(arr)
+    return sorted(arr, key=lambda s:bin(s).count("1"), reverse=True)
