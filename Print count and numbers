@@ -1,0 +1,13 @@
+#https://www.codewars.com/kata/559af787b4b8eac78b000022/train/python
+
+def count_me(data):
+    if data.isdigit() == False:
+        return ""
+    s = data[0]
+    for i in range(1, len(data)):
+        if data[i] == s[-1]:
+            s += data[i]
+        else:
+            s += f" {data[i]}"
+    s = s.split()
+    return "".join([f"{len(el)}{el[0]}" for el in s])
