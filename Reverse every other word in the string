@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/58d76854024c72c3e20000de/train/python
+
+def reverse_alternate(st):
+    st = st.split()
+    st = [el if i % 2 == 0 else el[::-1] for i, el in enumerate(st)]
+    return " ".join(st)
