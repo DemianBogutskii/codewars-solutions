@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/57efab9acba9daa4d1000b30/train/python
+
+def bald(s):
+    hair = s.count("/")
+    status = ["Clean!", "Unicorn!", "Homer!", "Careless!", "Careless!", "Careless!", "Hobo!"]
+    return [len(s) * "-", status[hair]] if hair <= 5 else [len(s) * "-", "Hobo!"]
