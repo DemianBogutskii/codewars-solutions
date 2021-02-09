@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/5f7b1a82be51af00105c82bd
+
+def div_by_9(ns): 
+    return int(ns) % 9 == 0
