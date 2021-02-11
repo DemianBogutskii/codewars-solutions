@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/602467452b35dd0021cbf46e/train/python
+
+def Hangman(guess, word):
+    return "".join(["_" if el != guess or el != guess.lower() else guess.lower() for el in word.lower()])
