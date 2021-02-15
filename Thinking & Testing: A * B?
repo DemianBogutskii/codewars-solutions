@@ -1,0 +1,6 @@
+#https://www.codewars.com/kata/5a90c9ecb171012b47000077/train/python
+
+def test_it(a, b):
+    a = sum([int(el) for el in str(a)])
+    b = sum([int(el) for el in str(b)])
+    return a * b
