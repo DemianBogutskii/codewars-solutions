@@ -3,3 +3,8 @@
 def update_light(current):
     a = ["green", "yellow", "red", "green"]
     return a[a.index(current) + 1]
+
+#second solution:
+
+def update_light(current):
+    return {"green":"yellow", "yellow":"red", "red":"green"}[current]
