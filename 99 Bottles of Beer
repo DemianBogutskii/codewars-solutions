@@ -1,0 +1,16 @@
+#https://www.codewars.com/kata/52a723508a4d96c6c90005ba
+
+def sing(): 
+    b = "bottles of beer"
+    o = "on the wall"
+    arr = []
+    for i in range(99, 2, -1):
+        arr.append(f"{i} {b} {o}, {i} {b}.")
+        arr.append(f"Take one down and pass it around, {i-1} {b} {o}.")
+    arr.append(f"2 {b} {o}, 2 {b}.")
+    arr.append(f"Take one down and pass it around, 1 bottle of beer {o}.")
+    arr.append(f"1 bottle of beer {o}, 1 bottle of beer.")
+    arr.append(f"Take one down and pass it around, no more {b} {o}.")
+    arr.append(f"No more {b} {o}, no more bottles of beer.")
+    arr.append(f"Go to the store and buy some more, 99 {b} {o}.")
+    return arr
