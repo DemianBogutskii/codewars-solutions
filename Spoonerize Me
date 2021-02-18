@@ -1,0 +1,7 @@
+#https://www.codewars.com/kata/56b8903933dbe5831e000c76/train/python
+
+def spoonerize(words):
+    words = words.split()
+    words1 = words[0]
+    words2 = words[1]
+    return words2[0] + words1[1:] + " " + words1[0] + words2[1:]
