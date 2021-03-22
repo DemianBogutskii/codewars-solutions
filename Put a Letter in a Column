@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/563d54a7329a7af8f4000059/train/python
+
+def build_row_text(index, c):
+    return "".join(["| " if i != index else f"|{c}" for i in range(10)])[:-1]
