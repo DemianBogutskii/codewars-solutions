@@ -1,0 +1,11 @@
+#https://www.codewars.com/kata/56bf3287b5106eb10f000899/solutions/python
+
+def move_vowels(input):
+    v = ""
+    s = ""
+    for el in input:
+        if el in "aouie":
+            v += el
+        else:
+            s += el
+    return s + v
