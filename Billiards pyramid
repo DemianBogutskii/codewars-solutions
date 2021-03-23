@@ -1,0 +1,10 @@
+#codewars.com/kata/5bb3e299484fcd5dbb002912
+
+def pyramid(balls):
+    count = 0
+    level = 1
+    while balls > 0:
+        balls -= level
+        level += 1
+        count += 1
+    return count-1 if balls < 0 else count
