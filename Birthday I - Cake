@@ -1,0 +1,10 @@
+#https://www.codewars.com/kata/5805ed25c2799821cb000005
+
+import string
+def cake(candles,d):
+    print(candles)
+    print(d)
+    if candles == 0: return 'That was close!'
+    abc = string.ascii_lowercase
+    s = sum([ord(d[i]) if i % 2 == 0 else abc.index(d[i])+1 for i in range(len(d))])
+    return 'That was close!' if s < candles * 0.7 else 'Fire!'
