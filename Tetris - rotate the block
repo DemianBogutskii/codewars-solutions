@@ -1,0 +1,12 @@
+#https://www.codewars.com/kata/594ff4005ceb2be738000018/solutions/python
+
+def transform(b):
+    l = len(b)
+    w = len(b[0])
+    arr = []
+    for i in range(w):
+        el = []
+        for j in range(l):
+            el.append(b[j][i])
+        arr.append(el[::-1])
+    return arr
