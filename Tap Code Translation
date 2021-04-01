@@ -1,0 +1,16 @@
+#https://www.codewars.com/kata/605f5d33f38ca800322cb18f/solutions/python
+
+def tap_code_translation(text):
+    letters = [["A", "B", "C", "D", "E",],
+               ["F", "G", "H",  "I", "J"],
+               ["L", "M", "N",  "O", "P"],
+               ["Q", "R", "S",  "T", "U"],
+               ["V", "W", "X",  "Y", "Z"]]
+    arr = []
+    text = text.upper().replace("K", "C")
+    for el in text:
+        for i in range(len(letters)):
+            if el in letters[i]:
+                arr.append("." * (i+1))
+                arr.append("." * (letters[i].index(el)+1))
+    return  " ".join(arr)
