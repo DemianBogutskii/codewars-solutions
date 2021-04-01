@@ -1,0 +1,8 @@
+#https://www.codewars.com/kata/5856c5f7f37aeceaa100008e/solutions/python
+
+def baubles_on_tree(b, br):
+    if br == 0: return  "Grandma, we will have to buy a Christmas tree first!"
+    arr = [b // br] * br
+    for i in range(b % br):
+        arr[i] += 1
+    return arr
