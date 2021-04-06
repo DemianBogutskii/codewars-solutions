@@ -1,0 +1,4 @@
+#https://www.codewars.com/kata/5863f97fb3a675d9a700003f
+
+def sum_ppg(p1, p2):
+    return p1["ppg"] + p2["ppg"]
