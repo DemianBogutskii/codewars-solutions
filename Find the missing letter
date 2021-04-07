@@ -1,4 +1,4 @@
-#https://www.codewars.com/kata/5839edaa6754d6fec10000a2/solutions/python/following/best_practice
+#https://www.codewars.com/kata/5839edaa6754d6fec10000a2/solutions
 
 import string
 def find_missing_letter(st):
