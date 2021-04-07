@@ -1,4 +1,4 @@
-#https://www.codewars.com/kata/58b665c891e710a3ec00003f/solutions/python
+#https://www.codewars.com/kata/58b665c891e710a3ec00003f
 
 def merge_arrays(a, b):
     only_a = set(a)-set(b)
