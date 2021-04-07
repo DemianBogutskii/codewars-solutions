@@ -1,0 +1,12 @@
+#https://www.codewars.com/kata/585d7d5adb20cf33cb000235
+
+def find_uniq(arr):
+    if arr[0] == arr[1]:
+        s = arr[0]
+    elif arr[0] == arr[2]:
+        s = arr[0]
+    elif arr[1] == arr[2]:
+        s = arr[1]
+    for i in arr:
+        if not i == s:
+            return i
