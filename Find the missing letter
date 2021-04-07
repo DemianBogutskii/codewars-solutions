@@ -1,0 +1,8 @@
+#https://www.codewars.com/kata/5839edaa6754d6fec10000a2/solutions/python/following/best_practice
+
+import string
+def find_missing_letter(st):
+    letters = string.ascii_letters
+    start = letters.index(st[0])
+    end = letters.index(st[-1])
+    return list(set(letters[start:end+1]) - set(st))[0]
