@@ -1,4 +1,4 @@
-#https://www.codewars.com/kata/54d418bd099d650fa000032d/solutions/python
+#https://www.codewars.com/kata/54d418bd099d650fa000032
 
 def vampire_test(x, y):
     s = f"{str(x)}{str(y)}"
