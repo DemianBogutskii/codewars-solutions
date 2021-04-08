@@ -1,4 +1,4 @@
-#https://www.codewars.com/kata/58fd52b59a9f65c398000096/solutions/python
+#https://www.codewars.com/kata/58fd52b59a9f65c398000096
 
 def min_and_max(l, d, x):
     for el in range(l, d+1):
