@@ -1,4 +1,4 @@
-#https://www.codewars.com/kata/5168b125faced29f66000005/solutions/python/following/oldest
+#https://www.codewars.com/kata/5168b125faced29f66000005
 
 def solution(st, sub_st):
     return st.count(sub_st)
